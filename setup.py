@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="random_horror",
-    version="0.0.1",
+    version="0.0.2",
     url="https://github.com/owenjklan/py-random-horror",
     author="Owen Klan",
     author_email="private@example.com",
