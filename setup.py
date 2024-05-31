@@ -10,4 +10,6 @@ setuptools.setup(
     long_description=open('README.md').read(),
     packages=setuptools.find_packages(),
     install_requires=['importlib_resources'],
+    install_package_data=True,
+    package_data={'random_horror': ['lists/*']},
 )
