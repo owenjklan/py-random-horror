@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+import json
+from random import choice
+
+from random_horror.rh import RandomHorrorGenerator
+
+
+def main():
+    rhg = RandomHorrorGenerator()
+    choices_list = rhg.randomise(3)
+
+    for index, generated_choice in enumerate(choices_list):
+        print(f" ---------------[ Generated Choice #{index + 1} ]---------------")
+        print(f"Place: {generated_choice['place']}")
+        print(f"Who: {generated_choice['who']}")
+        print(f"Plot Device: {generated_choice['plot_device']}")
+        print(f"Random Items to choose from:")
+        for item in generated_choice['random_items']:
+            print(f"\t{item}")
+        print()
+
+
+if __name__ == '__main__':
+    main()
