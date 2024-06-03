@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-import json
-from random import choice
-
-from random_horror.rh import RandomHorrorGenerator
+from random_horror_gen.rh import RandomHorrorGenerator
 
 
 def main():
