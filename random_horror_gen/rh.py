@@ -3,8 +3,8 @@ from random import choice
 
 import importlib_resources
 
-from random_horror.loaders import PackageListLoader
-from random_horror.loaders.base import ListLoader
+from random_horror_gen.loaders import PackageListLoader
+from random_horror_gen.loaders.base import ListLoader
 
 
 class RandomHorrorGenerator(object):

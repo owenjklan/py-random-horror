@@ -1,6 +1,6 @@
 from importlib_resources import files
 
-from random_horror.loaders.base import ListLoader
+from random_horror_gen.loaders.base import ListLoader
 
 
 class PackageListLoader(ListLoader):
@@ -26,7 +26,7 @@ class PackageListLoader(ListLoader):
         else:
             resource_path = src
 
-        list_lines = files('random_horror.lists').joinpath(resource_path).read_text().splitlines()
+        list_lines = files('random_horror_gen.lists').joinpath(resource_path).read_text().splitlines()
 
         return [
             line.strip() for line in list_lines if len(line.strip()) > 0

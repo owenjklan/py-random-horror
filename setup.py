@@ -1,8 +1,8 @@
 import setuptools
 
 setuptools.setup(
-    name="random_horror",
-    version="0.0.2",
+    name="random_horror_gen",
+    version="0.0.3",
     url="https://github.com/owenjklan/py-random-horror",
     author="Owen Klan",
     author_email="private@example.com",
@@ -11,5 +11,5 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=['importlib_resources'],
     install_package_data=True,
-    package_data={'random_horror': ['lists/*']},
+    package_data={'random_horror_gen': ['lists/*']},
 )
